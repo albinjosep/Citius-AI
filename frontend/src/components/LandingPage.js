@@ -289,7 +289,8 @@ export const LandingPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8">
             {mockData.testimonials.map((testimonial, index) => (
               <Card key={index} className="border border-gray-700 bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
@@ -313,6 +314,41 @@ export const LandingPage = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Mobile Carousel View */}
+          <div className="md:hidden">
+            <Carousel className="w-full max-w-sm mx-auto">
+              <CarouselContent>
+                {mockData.testimonials.map((testimonial, index) => (
+                  <CarouselItem key={index}>
+                    <Card className="border border-gray-700 bg-gray-800 shadow-lg">
+                      <CardContent className="p-6">
+                        <div className="flex items-center gap-1 mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                          ))}
+                        </div>
+                        <p className="text-gray-300 mb-6 italic leading-relaxed text-sm">
+                          "{testimonial.quote}"
+                        </p>
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-semibold">
+                            {testimonial.name.charAt(0)}
+                          </div>
+                          <div>
+                            <h4 className="font-semibold text-white text-sm">{testimonial.name}</h4>
+                            <p className="text-xs text-gray-400">{testimonial.role}, {testimonial.company}</p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="border-gray-600 bg-gray-800 text-white hover:bg-gray-700" />
+              <CarouselNext className="border-gray-600 bg-gray-800 text-white hover:bg-gray-700" />
+            </Carousel>
           </div>
         </div>
       </section>

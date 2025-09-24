@@ -24,12 +24,17 @@ import { mockData } from '../data/mock';
 
 export const LandingPage = () => {
   const [email, setEmail] = useState('');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleDemoRequest = () => {
     // Mock demo request
     console.log('Demo requested for:', email);
     alert('Demo request submitted! We\'ll contact you soon.');
     setEmail('');
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   return (

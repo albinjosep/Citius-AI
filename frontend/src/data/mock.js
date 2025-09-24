@@ -70,12 +70,20 @@ export const mockData = {
       icon: "📅"
     },
     {
-      name: "LinkedIn",
-      icon: "💼"
+      name: "Salesforce",
+      icon: "☁️"
     },
     {
-      name: "Stripe",
-      icon: "💳"
+      name: "Pipedrive",
+      icon: "🚀"
+    },
+    {
+      name: "Zendesk",
+      icon: "🎧"
+    },
+    {
+      name: "LinkedIn",
+      icon: "💼"
     }
   ],
 

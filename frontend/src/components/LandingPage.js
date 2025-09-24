@@ -32,19 +32,22 @@ export const LandingPage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Header */}
-      <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-gray-800 bg-black/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <Brain className="h-8 w-8 text-blue-600" />
-              <span className="text-2xl font-bold text-gray-900">Citius AI</span>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_ai-enterprise-hub/artifacts/vkm479ax_Screenshot%202025-09-24%20185648.png"
+                alt="Citius AI"
+                className="h-10 w-auto"
+              />
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-gray-600 hover:text-blue-600 transition-colors">Features</a>
-              <a href="#benefits" className="text-gray-600 hover:text-blue-600 transition-colors">Benefits</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-blue-600 transition-colors">Testimonials</a>
-              <Button variant="outline" className="mr-2">Sign In</Button>
-              <Button>Get Demo</Button>
+              <a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a>
+              <a href="#benefits" className="text-gray-400 hover:text-white transition-colors">Benefits</a>
+              <a href="#testimonials" className="text-gray-400 hover:text-white transition-colors">Testimonials</a>
+              <Button variant="outline" className="mr-2 border-gray-600 text-white hover:bg-gray-800">Sign In</Button>
+              <Button className="bg-blue-600 hover:bg-blue-700">Get Demo</Button>
             </div>
           </nav>
         </div>

@@ -293,22 +293,25 @@ export const LandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
+      <footer className="bg-black border-t border-gray-800 text-white py-16">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <Brain className="h-8 w-8 text-blue-400" />
-                <span className="text-2xl font-bold">Citius AI</span>
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_ai-enterprise-hub/artifacts/vkm479ax_Screenshot%202025-09-24%20185648.png"
+                  alt="Citius AI"
+                  className="h-8 w-auto"
+                />
               </div>
               <p className="text-gray-400 mb-6">
                 The AI-native CRM that understands your customers better than traditional solutions ever could.
               </p>
               <div className="flex space-x-4">
-                <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
+                <div className="w-8 h-8 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
                   <span className="text-sm">𝕏</span>
                 </div>
-                <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
+                <div className="w-8 h-8 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
                   <span className="text-sm">in</span>
                 </div>
               </div>

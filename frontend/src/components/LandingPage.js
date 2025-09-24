@@ -57,22 +57,22 @@ export const LandingPage = () => {
       <section className="pt-20 pb-32 relative overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-200" variant="secondary">
+            <Badge className="mb-6 bg-blue-900/30 text-blue-300 border border-blue-700 hover:bg-blue-900/40" variant="secondary">
               AI-native systems of record are transforming sales.
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">The Next Era of Sales</span> is Here
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">The Next Era of Sales</span> is Here
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
               Stop managing scattered data. Citius AI integrates Zoom calls, Slack messages, and financial reports into one intelligent system that auto-updates customer profiles and predicts their next move.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-              <div className="flex items-center gap-3 bg-white rounded-lg border p-3 w-full max-w-md">
+              <div className="flex items-center gap-3 bg-gray-900 rounded-lg border border-gray-700 p-3 w-full max-w-md">
                 <input
                   type="email"
                   placeholder="Enter your work email"
-                  className="flex-1 outline-none text-gray-700"
+                  className="flex-1 outline-none text-white bg-transparent placeholder-gray-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -86,17 +86,17 @@ export const LandingPage = () => {
               </Button>
             </div>
             
-            <div className="flex items-center justify-center gap-8 text-sm text-gray-500">
+            <div className="flex items-center justify-center gap-8 text-sm text-gray-400">
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-500" />
+                <CheckCircle className="h-4 w-4 text-green-400" />
                 No credit card required
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-500" />
+                <CheckCircle className="h-4 w-4 text-green-400" />
                 14-day free trial
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4 text-green-500" />
+                <CheckCircle className="h-4 w-4 text-green-400" />
                 Setup in minutes
               </div>
             </div>
@@ -105,8 +105,8 @@ export const LandingPage = () => {
         
         {/* Background decoration */}
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-30"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-100 rounded-full blur-3xl opacity-30"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
         </div>
       </section>
 

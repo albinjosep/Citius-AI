@@ -164,54 +164,54 @@ export const LandingPage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-24 bg-gray-50">
+      <section id="benefits" className="py-24 bg-black">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <Badge className="mb-6 bg-green-100 text-green-700 hover:bg-green-200" variant="secondary">
+              <Badge className="mb-6 bg-green-900/30 text-green-300 border border-green-700 hover:bg-green-900/40" variant="secondary">
                 The Golden Era of Sales
               </Badge>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
                 AI Won't Replace Salespeople. It Will Make Them Unstoppable.
               </h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Far from dealing a death blow to sales teams, AI-native CRMs usher in a golden era where reps focus on high-touch, consultative selling while AI handles the administrative work.
               </p>
               
               <div className="space-y-6">
                 {mockData.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-start gap-4">
-                    <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-1">
-                      <CheckCircle className="h-5 w-5 text-green-600" />
+                    <div className="w-8 h-8 rounded-full bg-green-900/50 border border-green-600 flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="h-5 w-5 text-green-400" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">{benefit.title}</h4>
-                      <p className="text-gray-600">{benefit.description}</p>
+                      <h4 className="font-semibold text-white mb-2">{benefit.title}</h4>
+                      <p className="text-gray-300">{benefit.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
             
-            <div className="bg-white rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">ROI Calculator</h3>
+            <div className="bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-bold text-white mb-6">ROI Calculator</h3>
               <div className="space-y-4">
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
-                  <span className="text-gray-600">Time saved per rep/day</span>
-                  <span className="font-semibold text-blue-600">3.5 hours</span>
+                <div className="flex justify-between items-center p-4 bg-gray-800 rounded-lg">
+                  <span className="text-gray-300">Time saved per rep/day</span>
+                  <span className="font-semibold text-blue-400">3.5 hours</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
-                  <span className="text-gray-600">Deal closure rate increase</span>
-                  <span className="font-semibold text-blue-600">23%</span>
+                <div className="flex justify-between items-center p-4 bg-gray-800 rounded-lg">
+                  <span className="text-gray-300">Deal closure rate increase</span>
+                  <span className="font-semibold text-blue-400">23%</span>
                 </div>
-                <div className="flex justify-between items-center p-4 bg-gray-50 rounded-lg">
-                  <span className="text-gray-600">Customer insights improvement</span>
-                  <span className="font-semibold text-blue-600">4x better</span>
+                <div className="flex justify-between items-center p-4 bg-gray-800 rounded-lg">
+                  <span className="text-gray-300">Customer insights improvement</span>
+                  <span className="font-semibold text-blue-400">4x better</span>
                 </div>
-                <Separator />
-                <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
-                  <span className="font-semibold text-gray-900">Annual ROI</span>
-                  <span className="font-bold text-2xl text-blue-600">340%</span>
+                <Separator className="bg-gray-700" />
+                <div className="flex justify-between items-center p-4 bg-blue-900/30 border border-blue-700 rounded-lg">
+                  <span className="font-semibold text-white">Annual ROI</span>
+                  <span className="font-bold text-2xl text-blue-400">340%</span>
                 </div>
               </div>
             </div>

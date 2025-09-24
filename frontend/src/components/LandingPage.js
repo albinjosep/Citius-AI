@@ -220,27 +220,27 @@ export const LandingPage = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="py-24 bg-white">
+      <section id="testimonials" className="py-24 bg-gray-900">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               SMBs Are Already Winning with Citius AI
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               See how forward-thinking companies are using AI-native CRM to outmaneuver enterprise competitors
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {mockData.testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <Card key={index} className="border border-gray-700 bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-600 mb-6 italic leading-relaxed">
+                  <p className="text-gray-300 mb-6 italic leading-relaxed">
                     "{testimonial.quote}"
                   </p>
                   <div className="flex items-center gap-3">
@@ -248,8 +248,8 @@ export const LandingPage = () => {
                       {testimonial.name.charAt(0)}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                      <p className="text-sm text-gray-500">{testimonial.role}, {testimonial.company}</p>
+                      <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                      <p className="text-sm text-gray-400">{testimonial.role}, {testimonial.company}</p>
                     </div>
                   </div>
                 </CardContent>

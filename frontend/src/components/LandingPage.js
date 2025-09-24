@@ -58,8 +58,7 @@ export const LandingPage = () => {
               AI-native systems of record are transforming sales.
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
-              AI-Native CRM That 
-              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent"> Actually Understands</span> Your Customers
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">The Next Era of Sales</span> is Here
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
               Stop managing scattered data. Citius AI integrates Zoom calls, Slack messages, and financial reports into one intelligent system that auto-updates customer profiles and predicts their next move.

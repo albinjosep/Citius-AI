@@ -111,51 +111,51 @@ export const LandingPage = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-24 bg-white">
+      <section id="features" className="py-24 bg-gray-900">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Multimodal Intelligence for Modern Sales
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               While traditional CRMs store static text, Citius AI processes video, audio, documents, and conversations to build living customer profiles.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {mockData.features.map((feature, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-white to-gray-50">
+              <Card key={index} className="border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="pb-4">
-                  <div className="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-blue-900/50 flex items-center justify-center mb-4 border border-blue-700">
                     {feature.icon}
                   </div>
-                  <CardTitle className="text-xl font-semibold">{feature.title}</CardTitle>
+                  <CardTitle className="text-xl font-semibold text-white">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                  <p className="text-gray-300 leading-relaxed">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
           {/* Integration showcase */}
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 border border-gray-700 rounded-2xl p-8 md:p-12">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              <h3 className="text-3xl font-bold text-white mb-4">
                 Seamless Integration with Your Existing Tools
               </h3>
-              <p className="text-gray-600 text-lg">
+              <p className="text-gray-300 text-lg">
                 Connect your entire tech stack in minutes, not months
               </p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
               {mockData.integrations.map((integration, index) => (
-                <div key={index} className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-                  <div className="w-12 h-12 mx-auto mb-3 bg-gray-100 rounded-lg flex items-center justify-center">
+                <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6 text-center shadow-sm hover:shadow-md hover:bg-gray-750 transition-all">
+                  <div className="w-12 h-12 mx-auto mb-3 bg-gray-700 rounded-lg flex items-center justify-center">
                     <span className="text-2xl">{integration.icon}</span>
                   </div>
-                  <h4 className="font-medium text-gray-900">{integration.name}</h4>
+                  <h4 className="font-medium text-white">{integration.name}</h4>
                 </div>
               ))}
             </div>

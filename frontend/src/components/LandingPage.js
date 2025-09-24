@@ -50,6 +50,8 @@ export const LandingPage = () => {
                 className="h-10 w-auto"
               />
             </div>
+            
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a>
               <a href="#benefits" className="text-gray-400 hover:text-white transition-colors">Benefits</a>
@@ -57,8 +59,56 @@ export const LandingPage = () => {
               <Button variant="outline" className="mr-2 border-gray-600 text-white hover:bg-gray-800">Sign In</Button>
               <Button className="bg-blue-600 hover:bg-blue-700">Get Demo</Button>
             </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleMobileMenu}
+                className="text-white hover:bg-gray-800"
+              >
+                <Menu className="h-6 w-6" />
+              </Button>
+            </div>
           </nav>
         </div>
+
+        {/* Mobile Sliding Menu */}
+        <div className={`md:hidden fixed inset-y-0 right-0 z-50 w-72 bg-black border-l border-gray-800 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+          <div className="flex items-center justify-between p-6 border-b border-gray-800">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ai-enterprise-hub/artifacts/vkm479ax_Screenshot%202025-09-24%20185648.png"
+              alt="Citius AI"
+              className="h-8 w-auto"
+            />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleMobileMenu}
+              className="text-white hover:bg-gray-800"
+            >
+              <X className="h-6 w-6" />
+            </Button>
+          </div>
+          
+          <nav className="flex flex-col p-6 space-y-6">
+            <a href="#features" onClick={toggleMobileMenu} className="text-gray-300 hover:text-white transition-colors text-lg">Features</a>
+            <a href="#benefits" onClick={toggleMobileMenu} className="text-gray-300 hover:text-white transition-colors text-lg">Benefits</a>
+            <a href="#testimonials" onClick={toggleMobileMenu} className="text-gray-300 hover:text-white transition-colors text-lg">Testimonials</a>
+            <Separator className="bg-gray-800" />
+            <Button variant="outline" className="border-gray-600 text-white hover:bg-gray-800 w-full">Sign In</Button>
+            <Button className="bg-blue-600 hover:bg-blue-700 w-full">Get Demo</Button>
+          </nav>
+        </div>
+
+        {/* Mobile Menu Overlay */}
+        {mobileMenuOpen && (
+          <div 
+            className="md:hidden fixed inset-0 bg-black/50 z-40"
+            onClick={toggleMobileMenu}
+          />
+        )}
       </header>
 
       {/* Hero Section */}

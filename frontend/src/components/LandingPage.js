@@ -180,7 +180,8 @@ export const LandingPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {/* Desktop Grid View */}
+          <div className="hidden md:grid md:grid-cols-3 gap-8 mb-16">
             {mockData.features.map((feature, index) => (
               <Card key={index} className="border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="pb-4">
@@ -194,6 +195,31 @@ export const LandingPage = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Mobile Carousel View */}
+          <div className="md:hidden mb-16">
+            <Carousel className="w-full max-w-sm mx-auto">
+              <CarouselContent>
+                {mockData.features.map((feature, index) => (
+                  <CarouselItem key={index}>
+                    <Card className="border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 shadow-lg">
+                      <CardHeader className="pb-4">
+                        <div className="w-12 h-12 rounded-lg bg-blue-900/50 flex items-center justify-center mb-4 border border-blue-700">
+                          {feature.icon}
+                        </div>
+                        <CardTitle className="text-lg font-semibold text-white">{feature.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-gray-300 leading-relaxed text-sm">{feature.description}</p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="border-gray-600 bg-gray-800 text-white hover:bg-gray-700" />
+              <CarouselNext className="border-gray-600 bg-gray-800 text-white hover:bg-gray-700" />
+            </Carousel>
           </div>
 
           {/* Integration showcase */}

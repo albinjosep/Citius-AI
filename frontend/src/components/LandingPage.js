@@ -149,7 +149,7 @@ export const LandingPage = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {mockData.integrations.map((integration, index) => (
                 <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6 text-center shadow-sm hover:shadow-md hover:bg-gray-750 transition-all">
                   <div className="w-12 h-12 mx-auto mb-3 bg-gray-700 rounded-lg flex items-center justify-center">

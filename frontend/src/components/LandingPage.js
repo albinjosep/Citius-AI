@@ -3,6 +3,7 @@ import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel';
 import { 
   Brain, 
   Database, 
@@ -15,7 +16,9 @@ import {
   CheckCircle,
   ArrowRight,
   Star,
-  PlayCircle
+  PlayCircle,
+  Menu,
+  X
 } from 'lucide-react';
 import { mockData } from '../data/mock';
 

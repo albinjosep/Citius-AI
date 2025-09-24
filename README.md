@@ -104,3 +104,26 @@ A full-stack application with React frontend and FastAPI backend.
 - ✅ Custom favicon (Citius AI branding)
 - ✅ Production-ready build configuration
 - ✅ Vercel deployment ready
+
+## Troubleshooting
+
+### Common Issues
+
+- **Ensure MongoDB is running** for local development
+- **Check environment variables** are properly set
+- **Verify CORS origins** include your domain
+- **Check Vercel function logs** for backend issues
+
+### Deployment Issues
+
+- **npm peer dependency errors**: Fixed with `.npmrc` files using `--legacy-peer-deps`
+- **React 19 compatibility**: The project uses React 19 which may have peer dependency conflicts with some packages
+- **Build failures**: Ensure all environment variables are set in Vercel dashboard
+- **API routing issues**: Check that `vercel.json` routes are properly configured
+
+### If deployment still fails:
+
+1. Check Vercel build logs for specific errors
+2. Ensure all required environment variables are set
+3. Verify MongoDB connection string is valid
+4. Test the production build locally: `npm run build` in frontend directory

@@ -207,7 +207,8 @@ export const LandingPage = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            {/* Desktop Grid View */}
+            <div className="hidden md:grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {mockData.integrations.map((integration, index) => (
                 <div key={index} className="bg-gray-800 border border-gray-700 rounded-lg p-6 text-center shadow-sm hover:shadow-md hover:bg-gray-750 transition-all">
                   <div className="w-12 h-12 mx-auto mb-3 bg-gray-700 rounded-lg flex items-center justify-center">
@@ -216,6 +217,26 @@ export const LandingPage = () => {
                   <h4 className="font-medium text-white">{integration.name}</h4>
                 </div>
               ))}
+            </div>
+
+            {/* Mobile Carousel View */}
+            <div className="md:hidden">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {mockData.integrations.map((integration, index) => (
+                    <CarouselItem key={index} className="basis-1/2">
+                      <div className="bg-gray-800 border border-gray-700 rounded-lg p-4 text-center shadow-sm">
+                        <div className="w-10 h-10 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
+                          <span className="text-xl">{integration.icon}</span>
+                        </div>
+                        <h4 className="font-medium text-white text-sm">{integration.name}</h4>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="border-gray-600 bg-gray-800 text-white hover:bg-gray-700" />
+                <CarouselNext className="border-gray-600 bg-gray-800 text-white hover:bg-gray-700" />
+              </Carousel>
             </div>
           </div>
         </div>

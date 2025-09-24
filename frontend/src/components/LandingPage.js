@@ -55,7 +55,7 @@ export const LandingPage = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-blue-100 text-blue-700 hover:bg-blue-200" variant="secondary">
-              The Future of Enterprise CRM is Here
+              AI-native systems of record are transforming sales.
             </Badge>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
               AI-Native CRM That 

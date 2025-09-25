@@ -47,43 +47,43 @@ export const mockData = {
   integrations: [
     {
       name: "Zoom",
-      icon: "📹"
+      icon: "🎥"
     },
     {
       name: "Slack",
-      icon: "💬"
+      icon: "#️⃣"
     },
     {
       name: "QuickBooks",
-      icon: "📊"
+      icon: "💰"
     },
     {
       name: "Gmail",
-      icon: "✉️"
+      icon: "📧"
     },
     {
       name: "HubSpot",
-      icon: "🔗"
+      icon: "🧲"
     },
     {
       name: "Calendly",
-      icon: "📅"
+      icon: "🗓️"
     },
     {
       name: "Salesforce",
-      icon: "☁️"
+      icon: "⚡"
     },
     {
       name: "Pipedrive",
-      icon: "🚀"
+      icon: "📈"
     },
     {
       name: "Zendesk",
-      icon: "🎧"
+      icon: "🎯"
     },
     {
       name: "LinkedIn",
-      icon: "💼"
+      icon: "🔗"
     }
   ],
 

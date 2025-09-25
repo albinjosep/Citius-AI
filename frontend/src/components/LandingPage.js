@@ -151,7 +151,7 @@ export const LandingPage = () => {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4 text-green-400" />
-                14-day free trial
+                7-day free trial
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4 text-green-400" />
@@ -416,7 +416,7 @@ export const LandingPage = () => {
               className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-200 hover:scale-105 shadow-lg"
             >
               <PlayCircle className="mr-2 h-5 w-5" />
-              Watch 3-Min Demo
+              Watch 2-Min Demo
             </Button>
             <Button 
               size="lg" 
@@ -446,7 +446,7 @@ export const LandingPage = () => {
                 />
               </div>
               <p className="text-gray-400 mb-6">
-                The AI-native CRM that understands your customers better than traditional solutions ever could.
+                The AI-native Sales that understands your customers better than traditional solutions ever could.
               </p>
               <div className="flex space-x-4">
                 <div className="w-8 h-8 bg-gray-800 border border-gray-700 rounded-lg flex items-center justify-center hover:bg-gray-700 cursor-pointer transition-colors">
